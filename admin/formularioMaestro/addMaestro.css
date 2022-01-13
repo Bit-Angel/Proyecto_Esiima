@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid green; */
+	font-family: 'Roboto';
+}
+body{
+	background-color: #F5F4F4;
+}
+
+/*ESTILOS DEL HEADER*/
+.header{
+	position: sticky;
+	top:0;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+	display: flex;
+	justify-content: space-around;
+}
+.logo-img{
+	height: 40px;
+	border-radius: 25px;
+	border: 2px solid white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+.logo{
+	width: 30%;
+	padding-left: 160px;
+	display: flex;
+	align-items: center;
+}
+.links{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+.links a{
+	text-decoration: none;
+	color: black;
+	margin-left: 40px;
+	font-size: 17px;
+	font-weight: 400;
+}
+.Salir p{
+	margin-right: 100px;
+	color: red;
+}
+.links a:hover{
+	text-decoration: underline;
+}
+
+label.titulo{
+    position: fixed;
+    width: 361px;
+    height: 59px;
+    margin-top: 28px;
+    margin-left: 500px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 59px;
+    text-align: center;
+}
+.main{
+    position: fixed;
+    width: 1182px;
+    height: 640px;
+    margin-top: 150px;
+    margin-left: 280px;
+	display: block;
+	justify-content: center;
+	align-items: center;
+}
+.datos{
+    width: 300px;
+    height: 35px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 35px;
+    color: black;
+	margin-bottom: 20px;
+}
+.P1{
+	width: 400px;
+	border-right: 2px solid black;
+}
+.P2{
+    margin-top: -256px;
+    margin-left: 520px;
+	margin-bottom: 0px;
+	padding-top: 70px;
+	display: flex;
+	flex-direction: column;
+	/* justify-content: center; */
+}
+input{
+    height: 40px;
+    width: 300px;
+    border-radius: 5px;
+    background: #ddd;
+    font-family: 'Roboto';
+    font-size: 18px;
+	padding-left: 10px;
+    border: 0px;
+    margin-bottom: 15px;
+}
+select{
+    height: 40px;
+    width: 300px;
+    left: 684px;
+    top: 8852px;
+    border-radius: 5px;
+    background: #CCCCCC;
+    font-family: 'Roboto';
+    font-size: 15px;
+    border: 0px;
+    margin-bottom: 10px;
+}
+.intomat{
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 23px;
+    text-align: center;
+    color: black;
+}
+button{
+    width: 220px;
+    height: 50px;
+    margin-top: 220px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 25px;
+    font-family: 'Roboto';
+    font-size: 20px;
+    border: 0px;
+}
+.enviar{
+    background: rgba(144, 233, 132, 1);
+    margin-left: 90px;
+	margin-top: 110px;
+}
+.borrar{
+    background: rgba(249, 248, 113, 1);
+    margin-left: 180px;
+	margin-top: 110px;
+}
+button:hover{
+    transform: scale(1.3);
+}
+
+
+/* - - - - -  ESTILOS RESPONSIVOS  - - - - - */
+@media (max-width: 480px) {
+
+	/*ESTILOS DEL HEADER*/
+	.header{
+		height: 70px;
+	}
+	.logo-img{
+		height: 25px;
+	}
+	.logo{
+		width: 10%;
+		padding-left: 5%;
+	}
+	.links{
+		width: 80%;
+	}
+	.links a{
+		margin-left: 10px;
+		font-size: 15px;
+		border-left: 1px solid #ccc;
+		padding-left: 5px;
+	}
+	.Salir p{
+		margin-right: 20px;
+		color: red;
+	}
+
+	/*ESTILOS DEL MAIN*/
+    
+    label.titulo{
+        width: 250px;
+        height: 40px;
+        margin-left: 120px;
+        font-size: 30px;
+    }
+    .main{
+        margin-left: 50px;
+    }
+    .datos{
+        width: 150px;
+        height: 35px;
+        font-size: 18px;
+	    margin-bottom: 20px;
+    }
+    .P1{
+	    width: 200px;
+    }
+    .P2{
+        margin-top: -249px;
+        margin-left: 230px;
+	    margin-bottom: 0px;
+    }
+    input{
+        height: 35px;
+        width: 150px;
+        font-size: 12px;
+	    padding-left: 10px;
+        margin-bottom: 10px;
+    }
+    select{
+        width: 150px;
+        height: 35px;
+        font-size: 18px;
+        font-size: 15px;
+    }
+    button{
+        width: 100px;
+        height: 30px;
+        font-size: 15px;
+    }
+    .enviar{
+        margin-left: 55px;
+    }
+    .borrar{
+        margin-left: 100px;
+    }
+}

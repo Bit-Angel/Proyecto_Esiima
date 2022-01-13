@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Añadir Maestro</title>
+    <link rel="stylesheet" href="addMaestro.css">
+</head>
+<body>
+
+    <form action="addMaestro.php" method="post">
+        <div class="header">
+			<div class="logo">
+				<a href="../../index.html"><img class="logo-img" src="./imagenes/logoesiima.jpg" alt="logo-esiima"></a>
+			</div>
+			<div class="links">
+				<a href="../menuAdmin.html" class="header-txt">INICIO</a>
+				<a href="../formularioAlumno/formularioAlumno.php" class="header-txt">ALTA ALUMNOS</a>
+				<a href="#" class="header-txt">ALTA MAESTROS</a>
+				<a href="../../index.html" class="header-txt Salir"><p>SALIR</p></a>
+			</div>
+		</div>
+
+       <label class="titulo" for="titulo">ALTA MAESTRO</label>
+
+       <main class="main">
+           <div class="P1">
+               <label class="datos" for="nombre">Nombres: </label><br>
+               <input type="text" name="nombre"><br>
+               <label class="datos" for="apellidos">Apellidos:</label><br>
+               <input type="text" name="apellidos"><br>
+               <label class="datos"  for="contrasena">Contraseña</label>
+               <input type="text" name="contrasena">
+           </div>
+
+            <div class="P2">
+               <label class="datos" for="materia">Materia a impartir:</label>
+                <select name="materia" >
+                                  <option class="intomat">Materia</option>
+                                  <option class="intomat" value="Programacion Web">Programacion Web</option>
+                                  <option class="intomat" value="Base de Datos">Base de Datos</option>
+                                  <option class="intomat" value="Ecuaciones Diferenciales">Ecuaciones Diferenciales</option>
+                                  <option class="intomat" value="Redes">Redes</option>
+                                  <option class="intomat" value="Circuitos Electricos">Circuitos Electricos</option>
+                                  <option class="intomat" value="Etica Profesional">Etica Profesional</option>
+               </select><br>
+            </div>
+            <button class="enviar" type="submit" value="comprobar">Registrar</button>
+            <button class="borrar" type="reset"  value="borrar">Limpiar</button>
+       </main>
+    </form>
+</body>
+</html>

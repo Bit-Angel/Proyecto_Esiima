@@ -1,0 +1,343 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid green; */
+	font-family: 'Roboto';
+}
+
+body{
+	background-color: #F5F4F4;
+    height: 100vh;
+}
+
+
+/*ESTILOS DEL HEADER*/
+.header{
+	position: sticky;
+	top:0;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo-img{
+	height: 40px;
+	border-radius: 25px;
+	border: 2px solid white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+
+.logo{
+	width: 30%;
+	padding-left: 160px;
+	display: flex;
+	align-items: center;
+}
+
+.links{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+
+}
+
+.links a{
+	text-decoration: none;
+	color: black;
+	margin-left: 40px;
+	font-size: 17px;
+	font-weight: 400;
+
+}
+
+.Salir p{
+	margin-right: 100px;
+	color: red;
+}
+
+
+.links a:hover{
+	text-decoration: underline;
+
+}
+
+.bases{
+    display: flex;
+    margin-top: -30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+
+}
+.icono1{
+    background-color: #90e984;
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    margin: auto;
+    padding: 35px;
+    margin-left: 30%;
+    margin-top: 190px;
+}
+
+.icono2{
+    background-color: #f9f871;
+    width: 220px;
+    height: 220px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    margin: auto;
+    padding: 40px;
+    margin-right: 30%;
+    margin-bottom: 150px;
+    margin-top: 190px;
+}
+
+.otro_mas{
+    display: flex;
+
+}
+
+.alumno{
+    display: flex;
+    margin-top: -120px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 25%;
+}
+
+.maestro{
+    text-decoration: none;
+    display: flex;
+    margin-top: -20px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 27%;
+    text-decoration: underline;
+}
+
+.link2 a{
+    text-decoration: none;
+
+}
+
+.ola, .ola2{
+	position: absolute;
+	bottom: 0;
+	width: 200vw;
+	animation: MoveWaves 7s linear infinite;
+}
+
+.ola2{
+	width: 100vw;
+	animation: MoveWaves2 7s ease -.125s infinite;
+
+}
+
+
+@keyframes MoveWaves {
+	0%{
+		margin-left: 0px;
+	}
+
+	50%{
+		margin-left: -100vw;
+	}
+	100%{
+		margin-left: 0px;
+	}
+}
+
+@keyframes MoveWaves2 {
+	0%{
+		transform: translateY(-14px);
+	}
+	50%{
+		transform: translateY(10px);
+	}
+	100%{
+		transform: translateY(-14px);
+	}
+}
+
+
+
+
+/* **************MEDIA****************** */
+
+@media (max-width: 480px){
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	/* border: 1px solid green; */
+	font-family: 'Roboto';
+}
+
+body{
+	background-color: #F5F4F4;
+    height: 100vh;
+}
+
+
+/*ESTILOS DEL HEADER*/
+.header{
+	position: sticky;
+	top:0;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+	display: flex;
+	justify-content: space-around;
+}
+
+.logo-img{
+	height: 40px;
+	border-radius: 25px;
+	border: 2px solid white;
+	box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+}
+
+.logo{
+	width: 30%;
+	padding-left: 10px;
+	display: flex;
+	align-items: center;
+}
+
+.links{
+	width: 70%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+    margin-left: 100px;
+}
+
+.links a{
+	text-decoration: none;
+	color: black;
+	margin-left: 20px;
+	font-size: 12px;
+	font-weight: 400;
+
+}
+
+.Salir p{
+	margin-right: 20px;
+	color: red;
+}
+
+
+.links a:hover{
+	text-decoration: underline;
+
+}
+
+.bases{
+    display: flex;
+    margin-top: -30px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+
+
+}
+.icono1{
+    background-color: #90e984;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    margin: auto;
+    padding: 20px;
+    margin-left: 15%;
+    margin-top: 190px;
+}
+
+.icono2{
+    background-color: #f9f871;
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 4px 4px rgba(0,0,0,.25);
+    margin: auto;
+    padding: 23px;
+    margin-right: 15%;
+    margin-bottom: 150px;
+    margin-top: 190px;
+}
+
+    .icono_alumno{
+        height: 90px;
+        width: 90px;
+    }
+
+    .icono_maestros{
+        height: 100px;
+        width: 100px;
+    }
+
+
+.otro_mas{
+    display: flex;
+
+}
+
+.alumno{
+    display: flex;
+    margin-top: -130px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 40%;
+    font-size: 13px;
+}
+
+.maestro{
+    text-decoration: none;
+    display: flex;
+    margin-top: -15px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    text-decoration: underline;
+    font-size: 13px;
+    margin-bottom: 31%;
+}
+
+.link2 a{
+    text-decoration: none;
+
+}
+
+.ola{
+    margin-top: 53px;
+    height: 10px;
+}
+
+}
